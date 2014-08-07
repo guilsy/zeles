@@ -1,18 +1,22 @@
-<h2>Регистрация</h2>
+<div class="panel panel-info">
 
-<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+	<div class="panel-heading"><h2>Регистрация</h2></div>
 
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email, :autofocus => true %></div>
+	<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+	  <%= devise_error_messages! %>
 
-  <div><%= f.label "Пароль" %><br />
-  <%= f.password_field :password %></div>
+	  <div class ="panel-body"><%= f.label :email %><br />
+	  <%= f.email_field :email, :autofocus => true %></div>
 
-  <div><%= f.label "Подтверждение пароля" %><br />
-  <%= f.password_field :password_confirmation %></div>
+	  <div class ="panel-body"><%= f.label "Пароль" %><br />
+	  <%= f.password_field :password %></div>
 
-  <div><%= f.submit "Зарегистрироваться" %></div>
-<% end %>
+	  <div class ="panel-body"><%= f.label "Подтверждение пароля" %><br />
+	  <%= f.password_field :password_confirmation %></div>
 
-<%= render "devise/shared/links" %>
+	  <div class ="panel-body"><%= f.submit "Зарегистрироваться", class: "btn btn-primary" %></div>
+	<% end %>
+
+	<div class ="panel-footer"><%= render "devise/shared/links" %></div>
+</div>
+
