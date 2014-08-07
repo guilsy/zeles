@@ -1,4 +1,8 @@
 <div class="jumbotron">
-	<h1>Welcome to my app!</h1>
-	Click here to <%= link_to "Sign Up", "#", class: "btn btn-primary" %>
+	<h1>Мы делаем мир вокруг приятным</h1>
+	<% if user_signed_in? %>
+	С возвращением!
+	<% else %>
+		<p>Нажмите здесь, чтобы <%= link_to "Присоединиться", new_user_registration_path, class: "btn btn-primary" %> или <%= link_to "Войти", new_user_session_path, class: "btn btn-default" %>
+	<% end %>
 </div>

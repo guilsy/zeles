@@ -19,7 +19,11 @@
       <li><%= link_to "События", about_path %></li>
       <li><%= link_to "Фото и Видео", about_path %></li>
       <li><%= link_to "О Нас", about_path %></li> 
-      <li><%= link_to "Пожертвовать", "#", class: "btn btn-primary" %></li>
+      <% if user_signed_in? %>
+          <li><%= link_to "Выйти", destroy_user_session_path, method: :delete %></li>
+        <% else %>
+          <li><%= link_to "Войти", new_user_session_path %></li>
+        <% end %>
     </ul>
   </div><!-- /.navbar-collapse -->
 </nav>
