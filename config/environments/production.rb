@@ -1,6 +1,7 @@
 Zeles::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-
+  #THE SERVER HAVE TO BE CHANGED FOR THE REAL HOST AFTER I GET ONE
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   # Code is not reloaded between requests.
   config.cache_classes = true
 
