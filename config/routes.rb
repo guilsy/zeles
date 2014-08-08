@@ -1,5 +1,6 @@
 Zeles::Application.routes.draw do
-  devise_for :users
+  devise_for  :users, 
+              :controllers => { :registrations => "my_devise/registrations"}
   devise_for :models
   root "pages#home"
   get "about" => "pages#about"

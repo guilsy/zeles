@@ -1,8 +1,8 @@
 <div class="jumbotron">
-	<h1>Мы делаем мир вокруг приятным</h1>
 	<% if user_signed_in? %>
-	С возвращением!
+	<h1>Мы вместе делаем мир вокруг приятным</h1>
 	<% else %>
+	<h1>Присоединйся к нам, чтобы сделать свой район приятным</h1>
 		<p>Нажмите здесь, чтобы <%= link_to "Присоединиться", new_user_registration_path, class: "btn btn-primary" %> или <%= link_to "Войти", new_user_session_path, class: "btn btn-default" %>
 	<% end %>
 </div>
