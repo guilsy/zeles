@@ -1,8 +1,35 @@
-<div class="jumbotron">
+<div class="jumbotron" style="margin-left:35px; background: url("moscow HD.jpg");">
 	<% if user_signed_in? %>
 	<h1>Мы вместе делаем мир вокруг приятным</h1>
 	<% else %>
-	<h1>Присоединйся к нам, чтобы сделать свой район приятным</h1>
+	<h1>Сделай свой район чистым</h1>
 		<p>Нажмите здесь, чтобы <%= link_to "Присоединиться", new_user_registration_path, class: "btn btn-primary" %> или <%= link_to "Войти", new_user_session_path, class: "btn btn-default" %>
 	<% end %>
+
+</div>
+
+<div class = "row">
+	<div class = "hidden-xs col-sm-3 callout">
+		Статьи
+	</div>
+
+	<div class = "col-sm-6">	
+		<div class = "row">
+			<div class = "col-xs-12 col-sm-12 callout">
+				<h2>О нас</h2>
+			</div>
+		</div>	
+
+		<div class = "row">
+			<div class = "col-xs-12 col-sm-12 callout">
+				<h2>О нас</h2>
+			</div>
+		</div>	
+
+	</div>
+
+	<div class = "hidden-xs col-sm-3 callout">
+		Twitter
+	</div>
+
 </div>
