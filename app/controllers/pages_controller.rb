@@ -6,7 +6,7 @@ class PagesController < ApplicationController
 		  config.access_token = '269983403-dnQmDrobkdpr3rGp0shj5VRBINEN1vu7oC3iTTeX'
 		  config.access_token_secret = 'D0T89MEjFEzEoFMFHYQWOqBhJj3MgOLtTfYxOB9t0oKWA'
 		end
-  	@tweets = client.home_timeline[1..6]
+  	@tweets = client.home_timeline[0..5]
   end
 
   def about

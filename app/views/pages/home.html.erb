@@ -28,13 +28,17 @@
 
 	</div>
 
-	<div class = "hidden-xs col-sm-3 callout">
-		Наш Twitter
-			<% @tweets.each do |tweet| %>
-				<li>
-					<%= tweet.text %>
-				</li>	
-			<% end %>	
+	<div class = "hidden-xs col-sm-3">
+		<div class="panel panel-info">
+  		<div class="panel-heading">
+    		<h3 class="panel-title">Наш Twitter</h3>
+  		</div>
+	  	<div class="panel-body list-group">
+	    	<% @tweets.each do |tweet| %>
+					<li class="list-group-item"><%= tweet.text %></li>
+				<% end %>	
+	  	</div>
+		</div>
 	</div>
 
 </div>
