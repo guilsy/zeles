@@ -1,11 +1,10 @@
-<div class="jumbotron" style="margin-left:35px; background: url("moscow HD.jpg");">
+<div class="row" style="padding-left:20px; background-color:gray">
 	<% if user_signed_in? %>
 	<h1>Мы вместе делаем мир вокруг приятным</h1>
 	<% else %>
 	<h1>Сделай свой район чистым</h1>
 		<p>Нажмите здесь, чтобы <%= link_to "Присоединиться", new_user_registration_path, class: "btn btn-primary" %> или <%= link_to "Войти", new_user_session_path, class: "btn btn-default" %>
 	<% end %>
-
 </div>
 
 <div class = "row">
@@ -33,11 +32,11 @@
   		<div class="panel-heading">
     		<h3 class="panel-title">Наш Twitter</h3>
   		</div>
-	  	<div class="panel-body list-group">
+	  	<!--<div class="panel-body list-group">
 	    	<% @tweets.each do |tweet| %>
 					<li class="list-group-item"><%= tweet.text %></li>
 				<% end %>	
-	  	</div>
+	  	</div> !-->
 		</div>
 	</div>
 
